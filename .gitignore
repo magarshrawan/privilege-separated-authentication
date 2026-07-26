@@ -1,0 +1,23 @@
+# Compiled programs
+/frontend
+/backend
+/create_verifier
+/frontend-analysis*
+/backend-analysis*
+
+# Generated files
+/*.o
+/*.zip
+/*.disassembly.txt
+
+# Unsafe raw traces
+/evidence/
+
+# Secrets
+*.db
+*.key
+*.pem
+
+# Editor files
+*~
+.vscode/
