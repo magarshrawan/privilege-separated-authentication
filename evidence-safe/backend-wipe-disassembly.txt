@@ -1,0 +1,25 @@
+
+backend-analysis:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .text:
+
+0000000000002960 <secure_zero>:
+    2960:	48 01 fe             	add    rsi,rdi
+    2963:	66 90                	xchg   ax,ax
+    2965:	66 66 2e 0f 1f 84 00 	data16 cs nop WORD PTR [rax+rax*1+0x0]
+    296c:	00 00 00 00 
+    2970:	48 89 f8             	mov    rax,rdi
+    2973:	48 83 c7 01          	add    rdi,0x1
+    2977:	c6 00 00             	mov    BYTE PTR [rax],0x0
+    297a:	48 39 fe             	cmp    rsi,rdi
+    297d:	75 f1                	jne    2970 <secure_zero+0x10>
+    297f:	c3                   	ret
+
+Disassembly of section .fini:

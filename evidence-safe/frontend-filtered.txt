@@ -1,0 +1,34 @@
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f2e4aa000
+mmap(NULL, 112815, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6f2e48e000
+mmap(NULL, 2063952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6f2e296000
+mmap(0x7f6f2e2be000, 1482752, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f6f2e2be000
+mmap(0x7f6f2e428000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x192000) = 0x7f6f2e428000
+mmap(0x7f6f2e47b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e5000) = 0x7f6f2e47b000
+mmap(0x7f6f2e481000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6f2e481000
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f2e293000
+memfd_create("auth-password", MFD_CLOEXEC) = 3
+ftruncate(3, 256)                       = 0
+mmap(NULL, 256, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f6f2e4a9000
+mlock(0x7f6f2e4a9000, 256)              = 0
+madvise(0x7f6f2e4a9000, 256, MADV_DONTDUMP) = 0
+socket(AF_UNIX, SOCK_SEQPACKET|SOCK_CLOEXEC, 0) = 4
+connect(4, {sa_family=AF_UNIX, sun_path="/run/st5039-auth.sock"}, 110) = 0
+sendmsg(4, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="HTUA\1\0\1\0\7\0\0\0\24\0\0\0shrawan\0\0\0\0\0\0\0\0\0"..., iov_len=80}], msg_iovlen=1, msg_control=[{cmsg_len=20, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[3]}], msg_controllen=24, msg_flags=0}, MSG_NOSIGNAL) = 80
+recvfrom(4, "HTUA\1\0\0\0", 8, MSG_WAITALL, NULL, NULL) = 8
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7faee2202000
+mmap(NULL, 112815, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7faee21e6000
+mmap(NULL, 2063952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7faee1fee000
+mmap(0x7faee2016000, 1482752, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7faee2016000
+mmap(0x7faee2180000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x192000) = 0x7faee2180000
+mmap(0x7faee21d3000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e5000) = 0x7faee21d3000
+mmap(0x7faee21d9000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7faee21d9000
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7faee1feb000
+memfd_create("auth-password", MFD_CLOEXEC) = 3
+ftruncate(3, 256)                       = 0
+mmap(NULL, 256, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7faee2201000
+mlock(0x7faee2201000, 256)              = 0
+madvise(0x7faee2201000, 256, MADV_DONTDUMP) = 0
+socket(AF_UNIX, SOCK_SEQPACKET|SOCK_CLOEXEC, 0) = 4
+connect(4, {sa_family=AF_UNIX, sun_path="/run/st5039-auth.sock"}, 110) = 0
+sendmsg(4, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="HTUA\1\0\1\0\7\0\0\0\23\0\0\0shrawan\0\0\0\0\0\0\0\0\0"..., iov_len=80}], msg_iovlen=1, msg_control=[{cmsg_len=20, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[3]}], msg_controllen=24, msg_flags=0}, MSG_NOSIGNAL) = 80
+recvfrom(4, "HTUA\1\0\1\0", 8, MSG_WAITALL, NULL, NULL) = 8
